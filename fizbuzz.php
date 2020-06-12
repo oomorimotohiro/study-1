@@ -3,7 +3,7 @@
     try{
         $param = $argv[1];
 
-        if(!0 < $param  || !$param > 100) {
+        if(!0 < $param  || !$param >= 100) {
             throw new Exception("Out of range");
         }
         else if(!is_numeric($param)) {
